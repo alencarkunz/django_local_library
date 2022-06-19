@@ -79,13 +79,14 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+"""
 """
 DATABASES = {  
     'default': {  
@@ -98,6 +99,17 @@ DATABASES = {
     }  
 }  
 """
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dael7phvvvdos',
+        'USER':  'omaijeunqdxglg',
+        'PASSWORD': 'bf0bab6943e7a277a13534805589f5ecaeee3ef6236d73637b20db4c5334cdf2',
+        'HOST': 'ec2-3-224-8-189.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
