@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '=!v2!3hqs)h0x3_ciir#3xgj*ns7%v
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False' #production
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost', '127.0.0.1', '[::1]'] #production
 
 
 # Application definition
